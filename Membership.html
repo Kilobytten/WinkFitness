@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Membership Sign-up</title>
+    <link href="pc_reset.css" rel="stylesheet" />
+    <link href="pc_styles1.css" rel="stylesheet" />
+    
+    <script src="rb_formsubmit.js"></script>
+    <script src="pricing.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="pc_logo.png" alt="Wink Fitness Logo" />
+        <nav class="horizontalNavigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Classes.html">Classes</a></li>
+                <li><a href="#">Membership</a></li>
+            </ul>
+        </nav>
+        <h1>Membership</h1>
+    </header>
+    <section>
+        <h1>Membership Options</h1>
+        <p>
+            Thank you for deciding to join our gym! Please fill out the forms below in full in to create an account. Please ensure the phone number <em>and</em> email are accurate as we will be using these to reachout to confirm dates and details for classes.
+        </p>
+        <p>
+            All information is kept private and unsold. No third party will have access at any point.
+        </p>
+        <p>
+        Required values are marked by an asterisk (*)
+        </p>
+        <form id="signUp" name="signUp" method="get" action="plansubmit.html">
+            <fieldset id="custInfo">
+                <legend>Customer Information</legend>
+                <div class="formRow">
+                    <label for="name">Name*</label>
+                    <input name="custName" id="name" type="text" placeholder="first and last name">
+                </div>
+                <div class="formRow">
+                    <label for="street">Street address</label>
+                    <input name="custStreet" id="street" type="text" />
+                </div>
+                <div class="formRow">
+                    <label for="zip">Postal Code</label>
+                    <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnnn)" />
+                </div>
+                <div class="formRow">
+                    <label for="phone"> Phone number</label>
+                    <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" />
+                </div>
+                <div class="formRow">
+                    <label for="mail">E-mail*</label>
+                    <input name="custEmail" id="mail" type="email" />
+                </div>
+            </fieldset>
+
+            <fieldset style="line-height:1.5" id="expInfo">
+                <legend>Membership Details</legend>
+                <label for="plan_0">Plan Type (Monthly)</label><br />
+                <input type="radio" id="plan_0" name="plan" value="19.95" checked /> <label for="plan_0">Basic plan ($19.95)</label><br>
+                <input type="radio" id="plan_1" name="plan" value="29.95" /> <label for="plan_1">2-Class plan ($29.95)</label><br>
+                <input type="radio" id="plan_2" name="plan" value="39.95" /> <label for="plan_2">4-Class plan ($39.95)</label><br>
+                <input type="radio" id="plan_3" name="plan" value="59.95" /> <label for="plan_3">Unlimited plan ($59.95)</label><br>
+                Tax: <input type="text" id="salesTax" name="salesTax" size="10" readonly /><br />
+                Total: <input type="text" name="totalCost" id="totalCost" size="10" readonly /><br />
+                <input type="button" id="submitButton" value="submit" />
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        Wink Fitness &copy; 2024 All Rights Reserved - (888)-888-8888 Mon-Sun 6am-7pm
+    </footer>
+</body>
+</html>

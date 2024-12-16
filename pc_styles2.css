@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+
+/* HTML and Body Styles */
+
+html {
+	background-color: rgb(201, 201, 201);
+}
+
+/* Page Body Styles */
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	max-width: 960px;
+	min-width: 640px;
+	background-color: rgb(234, 234, 234);
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+/* Page Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 33.333333333%;
+}
+
+	body > header > h1 {
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	}
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+	background-color: rgb(43, 77, 60);
+	display: block;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.8em;
+	text-align: center;
+	color: steelblue;
+}
+
+	nav.horizontalNavigation a:link,
+	nav.horizontalNavigation a:visited {
+		color: steelblue;
+	}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgb(122, 138, 141);
+} 
+
+/* Heading Styles */
+
+h1 {
+   text-indent: 1em;
+
+}
+
+body > header h1 {
+	font-size: 2.4em;
+	line-height: 2.4em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	letter-spacing: 0.3em;
+	text-align: center;
+	font-weight: normal;
+	color: rgb(43, 77, 60);
+}
+
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	padding: 0.5em 0;
+	text-align:center;
+}
+
+body > article > h1, body > section > h1, body > aside > h1 {
+	font-size: 1.3em;
+	background-color: rgb(43, 77, 60);
+	color: steelblue;
+}
+
+
+section > article > h1 {
+   font-size: 1.1em;
+   padding:.5em;  
+}
+
+
+/* Paragraph Styles */
+
+p {
+	margin: .5em 1em;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+
+/* Right Column Styles */
+
+aside {
+	background-color: rgb(201, 201, 201);
+	padding-bottom: 2em;
+}
+
+
+aside > h1 {
+   text-align: center;
+   background-color: rgb(126, 145, 152);
+   color: rgb(182, 24, 24);
+}
+
+dl {
+   font-size: 1.3em;
+}
+
+dl > dt {
+   color: black;
+   margin: 1em;
+   font-family: serif;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   color: steelblue;
+   font-family: serif;
+   font-size: 1em;
+}
+
+/* Footer Styles */
+
+footer {
+	color: rgb(186, 186, 156);
+	background-color: rgb(43, 77, 60);
+	font-size: 0.9em;
+	padding: 1em 0;
+	text-align: center;
+}
+
+/* Table Styles */
+table.schedule {
+	background: white;
+	border: 10px outset rgb(135, 189, 210);
+	border-collapse: collapse;
+	font-size: 0.75em;
+	width: 100%;
+}
+
+
+/* Table Cell Styles */
+
+table.schedule th, table.schedule td {
+	vertical-align: central;
+	border: 2px solid gray;
+	padding: 5px;
+}
+
+/* Table Caption Styles */
+table.schedule caption {
+	caption-side: bottom;
+	text-align: right;
+}
+
+
+/* Row Group Styles */
+table.schedule thead {
+	background: steelblue;
+	color: white;
+}
+
+table.schedule thead tr {
+	height: 30px;
+}
+
+table.schedule tbody tr {
+	height: 40px;
+}
+
+/* Column Group Styles */
+col#firstCol {
+	background: steelblue;
+	width: 16%;
+}
+
+col.dayCols {
+	background: rgb(126, 145, 152);
+	width: 12%;
+}
